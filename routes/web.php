@@ -14,11 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-/*Route::get('/', function () {
+Route::get('/home', function () {
     return view('home');
-});*/
+});
 
-Route::get('/', [ProjetoController::class, 'show']);
 
-Route::post('/criar-projeto', [ProjetoController::class, 'store'])->name('create-projeto');
-Route::get('/projetos', [ProjetoController::class, 'index'])->name('home.projeto');
+
+Route::get('pro\projeto', [ProjetoController::class, 'create']);
+

@@ -52,7 +52,7 @@
                     <i class="fa fa-angle-left pull-right"></i>
                   </a>
                   <ul class="treeview-menu">
-                    <li><a href="/projetos"><i class="fa fa-circle-o"></i> Projeto</a></li>
+                    <li><a href="pro/projeto"><i class="fa fa-circle-o"></i> Projeto</a></li>
 
                   </ul>
 

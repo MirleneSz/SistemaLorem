@@ -3,6 +3,8 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use App\Http\Requests\Request;
+
 
 class ProjetoFormRequest extends FormRequest
 {
@@ -24,13 +26,14 @@ class ProjetoFormRequest extends FormRequest
     public function rules()
     {
         return [
-        'idprojeto'=>'required',
         'nome'=>'required|max:255',
         'inicio'=>'required',
         'termino'=>'required',
         'valor'=>'required|numeric',
         'risco'=>'required|numeric',
         'participantes'=>'required|max:512',
+        'idprojeto'=>'required',
+
         
         ];
     }
