@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProjetoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+/*Route::get('/', function () {
+    return view('home');
+});*/
+
+Route::get('/', [ProjetoController::class, 'show']);
+
+Route::post('/criar-projeto', [ProjetoController::class, 'store'])->name('create-projeto');
+Route::get('/projetos', [ProjetoController::class, 'index'])->name('home.projeto');
